@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@350&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dictionary.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="dictionary">
+        <h1>Dictionary App</h1>
+        <input type="text" id="word" placeholder="Enter Word">
+        <button id="btn1" onclick="display()">Get Meaning</button>
+        <button id="btn2" onclick="reset()">Reset</button>
+        <div class="container">
+            <h2 id="meaning_heading"></h2>
+            <P id="meaning"></P>
+            <h2 id="partofspeech_heading"></h2>
+            <div class="partofspeech_content">
+            </div>
+            <!--<p id="partofspeech"></p>-->
+            <div class="synonyms_content">
+            </div>
+            <div class="audio_conatiner">
+
+            </div>
+        </div>
+    </div>
+    <script src="dictionary.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #fbbab2;
+    font-family: 'Roboto', sans-serif;
+}
+.dictionary{
+    text-align: center;
+    width: 100%;
+    
+}
+.container {
+    padding-left: 10px;
+}
+h1{
+    margin: 20px;
+}
+h2,p{
+    text-align: left;
+    margin-top: 20px;
+}
+audio{
+    margin-top: 20px;
+}
+#word {
+    height: 30px;
+    width: 50%;
+    font-size: 20px;
+}
+#btn1,#btn2 {
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: #0B5D69;
+    color: #fff;
+}
+.partofspeech_content{
+    display: flex;
+    flex-direction: row;
+}
+.partofspeech{
+    border-radius: 10px;
+    background-color: brown;
+}
+p.partofspeech {
+    margin: 10px;
+    width: 90px;
+    text-align: center;
+    height: 20px;
+    color: #e2e2e2;
+}
