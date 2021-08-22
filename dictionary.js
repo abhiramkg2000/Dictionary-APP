@@ -62,7 +62,6 @@ function reset()
     meaning_heading.innerHTML=" ";
     meaning.innerHTML=" ";
     partofspeech_heading.innerHTML=" ";
-    //synonyms_heading.innerHTML=" ";
     partofspeech_content.innerHTML=" ";
     synonyms_container.innerHTML=" ";
     synonyms_heading.innerHTML=" ";
