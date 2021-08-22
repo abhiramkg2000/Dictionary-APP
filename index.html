@@ -14,19 +14,21 @@
     <div class="dictionary">
         <h1>Dictionary App</h1>
         <input type="text" id="word" placeholder="Enter Word">
-        <button id="btn1" onclick="display()">Get Meaning</button>
-        <button id="btn2" onclick="reset()">Reset</button>
+        <div class="buttons">
+            <button id="btn1" onclick="display()">Get Meaning</button>
+            <button id="btn2" onclick="reset()">Reset</button>
+        </div>
         <div class="container">
             <h2 id="meaning_heading"></h2>
             <P id="meaning"></P>
             <h2 id="partofspeech_heading"></h2>
-            <div class="partofspeech_content">
-            </div>
+            <div class="partofspeech_content"></div>
             <!--<p id="partofspeech"></p>-->
-            <div class="synonyms_content">
-            </div>
+            <div class="synonyms_content"></div>
+            <h2 id="synonyms_heading"></h2>
+            <div class="synonyms_container"></div>
             <div class="audio_conatiner">
-
+                <h2 id="audio_heading"></h2>
             </div>
         </div>
     </div>
