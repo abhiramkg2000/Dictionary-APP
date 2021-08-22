@@ -11,8 +11,7 @@ body{
 }
 .dictionary{
     text-align: center;
-    width: 100%;
-    
+    width: 100%; 
 }
 .container {
     padding-left: 10px;
@@ -32,26 +31,43 @@ audio{
     width: 50%;
     font-size: 20px;
 }
-#btn1,#btn2 {
+#btn1, #btn2 {
     height: 30px;
+    margin-bottom: 10px;
+    margin-right: 10px;
     width: 100px;
     border-radius: 20px;
     font-size: 15px;
-    background-color: #0B5D69;
-    color: #fff;
+    background-color: rgb(11, 93, 105);
+    color: rgb(255, 255, 255);
 }
 .partofspeech_content{
     display: flex;
     flex-direction: row;
 }
-.partofspeech{
+.synonyms_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.partofspeech,.synonyms{
     border-radius: 10px;
     background-color: brown;
 }
-p.partofspeech {
+p.partofspeech{
     margin: 10px;
-    width: 90px;
+    width: 100px;
     text-align: center;
-    height: 20px;
+    height: 25px;
     color: #e2e2e2;
+}
+p.synonyms{
+    margin: 10px;
+    width: 160px;
+    text-align: center;
+    height: 35px;
+    color: #e2e2e2;
+}
+.buttons {
+    margin-top: 20px;
 }
