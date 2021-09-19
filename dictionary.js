@@ -8,6 +8,7 @@ let partofspeech_heading=document.querySelector("#partofspeech_heading");
 let partofspeech_content=document.querySelector(".partofspeech_content");
 
 let audio_heading=document.querySelector("#audio_heading");
+let audio_container=document.querySelector(".audio_container");
 
 let synonyms_container=document.querySelector(".synonyms_container");
 let synonyms_heading=document.querySelector("#synonyms_heading");
@@ -26,13 +27,14 @@ function display()
             p.innerHTML=data[0].meanings[i].partOfSpeech;
             partofspeech_content.append(p);
         }
+       
         audio_heading.innerHTML="How To Pronounce";
         var audio=document.createElement("audio");
-        audio.setAttribute("id","audio");
+        audio.setAttribute("class","audio");
         audio.setAttribute("src",data[0].phonetics[0].audio);
         audio.setAttribute("controls","controls");
         audio.setAttribute("muted","muted");
-        container.append(audio);
+        audio_container.append(audio);
         synonyms_heading.innerHTML="Synonyms";
         var synonyms_array=data[0].meanings[0].definitions[0].synonyms;
         if(synonyms_array)
@@ -55,13 +57,20 @@ function display()
 }
 function reset()
 {
-    let audio=document.querySelector("#audio");
-    audio.remove();
+    let audio=document.getElementsByClassName("audio");
+    var audio_lenght=audio.length;
+    while(audio_lenght!=0)
+    {
+        audio[audio_lenght-1].remove();
+        audio_lenght--;
+    }
+    
     word.value=" ";
     audio_heading.innerHTML=" ";
     meaning_heading.innerHTML=" ";
     meaning.innerHTML=" ";
     partofspeech_heading.innerHTML=" ";
+    
     partofspeech_content.innerHTML=" ";
     synonyms_container.innerHTML=" ";
     synonyms_heading.innerHTML=" ";
