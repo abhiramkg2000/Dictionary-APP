@@ -31,12 +31,15 @@ function display()
         audio_heading.innerHTML="How To Pronounce";
         var audio=document.createElement("audio");
         audio.setAttribute("class","audio");
-        audio.setAttribute("src",data[0].phonetics[0].audio);
+        audio.setAttribute("src",
+        data[0].phonetics[0].audio
+          ? data[0].phonetics[0].audio
+          : data[0].phonetics[1].audio);
         audio.setAttribute("controls","controls");
         audio.setAttribute("muted","muted");
         audio_container.append(audio);
         synonyms_heading.innerHTML="Synonyms";
-        var synonyms_array=data[0].meanings[0].definitions[0].synonyms;
+        var synonyms_array=data[0].meanings[0].synonyms;
         if(synonyms_array)
         {
             var synonyms_data=" ";
