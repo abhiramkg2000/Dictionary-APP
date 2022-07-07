@@ -45,7 +45,7 @@ audio{
     display: flex;
     flex-direction: row;
 }
-.synonyms_container{
+.synonyms_content{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
